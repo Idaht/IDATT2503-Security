@@ -8,7 +8,9 @@ int main() {
   char *test_lt = "<";
   char *test_gt = ">";
 
-  assert(strcmp(replace("&"), "&amp") == true);
+  char *x = replace("&");
+
+  assert(strcmp(replace(x), "&amp") == true);
   assert(strcmp(replace(test_lt), "&lt") == true);
   assert(strcmp(replace(test_gt), "&gt") == true);
 
