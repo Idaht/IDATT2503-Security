@@ -7,7 +7,7 @@ int main() {
   char *test_lt = "<";
   char *test_gt = ">";
 
-  assert(strcmp(replace("&"), "&amp") == 1);
+  assert(strcmp(replace("&"), "&amp"));
   assert(strcmp(replace(test_lt), "&lt") == 1);
   assert(strcmp(replace(test_gt), "&gt") == 1);
 
