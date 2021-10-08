@@ -31,10 +31,13 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
-    - name: Test
+    - name: Compile test
       # Execute tests defined by the CMake configuration.
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
-      run: ctest -C
+      run: clang++ -Wall -std=c replace_fuzzer_test.c -o replace_fuzzer_test
+
+    - name: Test
+      run: ./replace_fuzzer_test
 
     - name: Compile fuzzer
       run: clang -g -fsanitize=fuzzer,address replace.h replace_fuzzer_test.c
