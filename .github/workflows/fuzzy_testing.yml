@@ -39,8 +39,7 @@ jobs:
 
     - name: Test
      # run: ./main_test
-
-     run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
      
     #- name: Compile test
