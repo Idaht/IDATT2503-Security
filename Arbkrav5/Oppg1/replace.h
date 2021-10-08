@@ -39,23 +39,14 @@ char *replace(char *input) {
   while (input[pos] != '\0') {
 
     if (input[pos] == '&') {
-      //char *temp = result;
-      //  result = malloc(strlen(result) + strlen(amp) + 1);
-      //sub_back(temp, counter, result);
       replace_helper(result, counter, amp);
       counter += strlen(amp) - 1;
 
     } else if (input[pos] == '<') {
-      //char *temp = result;
-      // result = malloc(strlen(result) + strlen(lt)) + 1;
-      //sub_back(temp, counter, result);
       replace_helper(result, counter, lt);
       counter += strlen(lt) - 1;
 
     } else if (input[pos] == '>') {
-      //  char *temp = result;
-      // result = malloc(strlen(result) + strlen(gt) + 1);
-      //sub_back(temp, counter, result);
       replace_helper(result, counter, gt);
       counter += strlen(gt) - 1;
 
