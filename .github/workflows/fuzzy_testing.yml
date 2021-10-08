@@ -17,7 +17,7 @@ jobs:
 
     defaults:
       run:
-      working-directory: ./Arbkrav5/Oppg1
+        working-directory: ./Arbkrav5/Oppg1
 
     steps:
     - uses: actions/checkout@v2
