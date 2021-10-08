@@ -7,8 +7,4 @@ int main() {
   scanf("%s", input);
 
   replace(input);
-
-  if (strcmp(replace("&"), "&amp") == 1) {
-    printf("Yo");
-  }
 }
