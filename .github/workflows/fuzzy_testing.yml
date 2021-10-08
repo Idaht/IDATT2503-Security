@@ -37,7 +37,7 @@ jobs:
       run: gcc main_test.c -o main_test
 
     - name: Test
-      run: ./replace_fuzzer_test
+      run: ./main_test
 
     - name: Compile fuzzer
       run: clang -g -fsanitize=fuzzer,address replace.h replace_fuzzer_test.c
