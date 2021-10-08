@@ -11,7 +11,7 @@ int main() {
   assert(strcmp(replace(test_lt), "&lt"));
   assert(strcmp(replace(test_gt), "&gt"));
 
-  assert(strcmp(replace(test_amp), "Hei") == 0);
-  assert(strcmp(replace(test_lt), "på") == 0);
-  assert(strcmp(replace(test_gt), "deg") == 0);
+  assert(strcmp(replace(test_amp), "Hei"));
+  assert(strcmp(replace(test_lt), "på"));
+  assert(strcmp(replace(test_gt), "deg"));
 }
