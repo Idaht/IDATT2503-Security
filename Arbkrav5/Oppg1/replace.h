@@ -33,6 +33,7 @@ char *replace(char *input) {
   }
 
   pos = 0;
+
   char *result = malloc(sizeof(*result) * (strlen(input) + (amp_counter * strlen(amp)) + (lt_counter * strlen(lt)) + (gt_counter * strlen(gt)) + 1));
 
   while (input[pos] != '\0') {
