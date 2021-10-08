@@ -34,7 +34,7 @@ jobs:
     - name: Compile test
       # Execute tests defined by the CMake configuration.
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
-      run: gcc replace_fuzzer_test.c -o replace_fuzzer_test
+      run: gcc main_test.c -o main_test
 
     - name: Test
       run: ./replace_fuzzer_test

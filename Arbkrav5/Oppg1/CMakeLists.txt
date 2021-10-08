@@ -8,4 +8,6 @@ add_executable(Oppg1 main.c)
 
 add_executable(maint_test main_test.c)
 
+enable_testing()
+
 #("clang -g -fsanitize=fuzzer,address replace.h replace_fuzzer_test.c")
